@@ -262,7 +262,7 @@ public class AssetFilesystem extends Filesystem {
 
     @Override
     String filesystemPathForURL(LocalFilesystemURL url) {
-        return null;
+        return toNativeUri(url).getPath();
     }
 
     @Override

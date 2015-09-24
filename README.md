@@ -496,7 +496,7 @@ Android recognize a <preference> tag in `config.xml` which names the
 filesystems to be installed. By default, all file-system roots are enabled.
 
     <preference name="iosExtraFilesystems" value="library,library-nosync,documents,documents-nosync,cache,bundle,root" />
-    <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,root" />
+    <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,root,assets" />
 
 ### Android
 
@@ -506,6 +506,7 @@ filesystems to be installed. By default, all file-system roots are enabled.
 * `cache`: The application's internal cache directory
 * `cache-external`: The application's external cache directory
 * `root`: The entire device filesystem
+* `assets`: The application's assets directory
 
 Android also supports a special filesystem named "documents", which represents a "/Documents/" subdirectory within the "files" filesystem.
 
